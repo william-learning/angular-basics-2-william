@@ -1,8 +1,16 @@
 <input 
   type="text"
   class="form-control"
-  [(ngModel)]="username" (input)="onFill($event)"> 
+  [(ngModel)]="username"> 
+
+  <!-- <input 
+  type="text"
+  class="form-control"
+  [(ngModel)]="username" 
+  (input)="onFill($event)">  -->
 
   <p>{{ username }}</p>
 
-  <button class="btn btn-primary" [disabled]="isEmpty" (click)="onClearUsername()">Clear Username</button>
+  <!-- <button class="btn btn-primary" [disabled]="isEmpty" (click)="onClearUsername()">Clear Username</button> -->
+
+  <button class="btn btn-primary" [disabled]="username === ''" (click)="username=''">Clear Username</button>

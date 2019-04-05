@@ -15,17 +15,17 @@ export class InputComponent implements OnInit {
   ngOnInit() {
   }
 
-  onFill(event: any) {
-    if (this.username === '') {
-      this.isEmpty = true;
-    } else {
-      this.isEmpty = false;
-    }
-  }
+  // onFill(event: any) {
+  //   if (this.username === '') {
+  //     this.isEmpty = true;
+  //   } else {
+  //     this.isEmpty = false;
+  //   }
+  // }
 
-  onClearUsername() {
-    this.username = '';
-    this.isEmpty = true;
-  }
+  // onClearUsername() {
+  //   this.username = '';
+  //   this.isEmpty = true;
+  // }
 
 }
